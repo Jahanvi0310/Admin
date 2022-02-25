@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@coreui/coreui": "^4.0.3",
+    "@coreui/react": "^3.4.6",
+    "@coreui/react-chartjs": "^1.1.0",
+    "concurrently": "^6.2.1",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.0.7",
+    "nodemon": "^2.0.13",
+    "react-redux": "^7.2.5",
+    "sass": "^1.41.1"
+  },
+  "scripts": {
+    "server": "nodemon back-end/server",
+    "client": "npm start --prefix front-end",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  }
+}
